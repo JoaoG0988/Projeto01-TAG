@@ -1,0 +1,6 @@
+networkx
+pandas
+matplotlib
+python-louvain
+community
+jupyterlab
