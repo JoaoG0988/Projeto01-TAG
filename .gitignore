@@ -3,7 +3,8 @@
 __pycache__/
 *.py[codz]
 *$py.class
-
+*.gexf
+*.gephi
 # C extensions
 *.so
 
