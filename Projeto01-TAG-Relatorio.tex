@@ -1,0 +1,71 @@
+\documentclass[journal]{IEEEtran}
+
+\usepackage{xspace}
+\renewcommand{\LaTeX}{La\TeX\xspace}
+%\renewcommand{\TeX}{\TeX\ }
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+
+\title{Teoria e Aplicação de Grafos - Projeto 1}
+
+
+\author{Ricardo Martins Fortes, 190044179}
+
+
+
+\maketitle
+
+\IEEEpeerreviewmaketitle
+
+
+\section{Introdução}
+
+\IEEEPARstart{U}{m} grafo, na matemática, é uma estrutura representada por $G = (V, E)$, onde $V$ denota um conjunto de vértices (ou nós) e $E$ representa o conjunto de arestas que conectam esses vértices. Esse tipo de estrutura, apesar da definição simples, é capaz de representar diversos conjuntos de dados, e abstrair informações muito úteis para diversos propósitos. Na prática, nós podem representar indivíduos, computadores, proteínas ou cidades, enquanto as arestas simbolizam interações, cabos, reações químicas, rodovias e outros, ou seja, suas aplicações se extendem para as mais variadas áreas, destacando sua relevância. A análise desse tipo de rede permite extrair padrões ocultos dessas estruturas, transformando emaranhados de conexões em características quantificáveis sobre o comportamento do sistema.
+
+Para interpretar o papel e a relevância dos vértices e arestas dentro da estrutura global da rede, são utilizadas métricas topológicas conhecidas como medidas de centralidade, e também algoritmos de detecção de comunidades estruturais.
+
+\subsection{Grau de Centralidade}
+Esta é a métrica mais fundamental da análise topológica. O grau de centralidade quantifica puramente a conectividade local de um nó, sendo calculado pela fração de conexões diretas que ele possui em relação ao total de conexões possíveis na rede. Em sistemas reais, nós com alto grau de centralidade são interpretados como os elementos de maior "popularidade", ou maior atividade direta dentro do ecossistema.
+
+\subsection{Centralidade de Intermediação}
+A centralidade de intermediação avalia a importância de um nó no controle do fluxo de informações ao longo da rede. Ela é calculada determinando a frequência com que um nó específico atua como uma ponte no caminho mais curto (geodésico) entre todos os outros pares de nós do grafo. Vértices com alta intermediação representam "gargalos" críticos ou corretores indispensáveis; sua remoção geralmente resulta na fragmentação da rede ou no aumento drástico do tempo de comunicação entre as partes.
+
+\subsection{Centralidade de Proximidade}
+Enquanto a intermediação foca no controle, a proximidade foca na eficiência de difusão. Esta métrica é inversamente proporcional à soma das distâncias geodésicas de um nó específico até todos os demais nós da rede. Em termos práticos, um vértice com alta centralidade de proximidade requer, em média, um número mínimo de saltos para alcançar qualquer outro ponto do grafo, caracterizando-se como o propagador ideal para espalhar recursos ou informações rapidamente por todo o sistema.
+
+\subsection{Centralidade de Autovetor}
+A centralidade de autovetor transcende a conectividade quantitativa para avaliar a conectividade qualitativa. O princípio fundamental desta métrica postula que a importância de um nó é proporcional à importância dos nós aos quais ele está conectado. Matematicamente, a centralidade do nó é determinada pelo autovetor principal da matriz de adjacência do grafo. Esta métrica identifica os elementos de maior influência global e "prestígio" na rede — indicando que estar conectado a poucos nós vitais é mais impactante do que estar conectado a múltiplos nós periféricos.
+
+\subsection{Algoritmo de Louvain}
+Diferente das métricas de centralidade, que avaliam nós individualmente, o Algoritmo de Louvain é um método heurístico voltado para a compreensão macroscópica da rede. Seu objetivo é realizar a detecção de comunidades (ou clusters). O algoritmo opera buscando maximizar iterativamente a "modularidade" do grafo — uma função que mede a densidade das arestas dentro de uma comunidade em comparação com uma distribuição aleatória. O resultado é o particionamento natural da rede em subgrupos altamente coesos internamente e fracamente conectados entre si, revelando a organização hierárquica e funcional do sistema.
+
+
+\section{Metodologia}
+Neste projeto, foram seguidas as orientação disponibilizadas pelo professor da diciplina, consistindo nas seguintes etapas.
+
+\subsection{Coleta de dados}
+
+\subsection{Construção do grafo}
+
+\subsection{Extração de métricas}
+
+\subsection{Visualização dos dados}
+
+
+
+\section{Discussão e Análise}
+
+
+
+\section{Conclusão}
+\label{sec:conclusao}
+
+
+
+
+\end{document}
+
+
